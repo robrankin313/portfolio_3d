@@ -167,9 +167,9 @@ function Network({ colorRef }) {
       let wave = 0
       if (r && r.dist[i] !== Infinity) {
         const w = (t - r.t0) * 6 - r.dist[i]
-        if (w > 0 && w < 2) wave = Math.sin((Math.PI * w) / 2)
+        if (w > 0 && w < 1) wave = Math.sin((Math.PI * w) )
       }
-      const targetScale = (hovered === i ? 2.2 : 1) + wave * 1.8
+      const targetScale = (hovered === i ? 2.2 : 1) + wave * 0.8
       m.scale.setScalar(m.scale.x + (targetScale - m.scale.x) * 0.2)
       m.material.color.copy(colorRef.current).multiplyScalar(2)
       m.material.color.lerp(HOT, Math.min(1, wave + (hovered === i ? 0.8 : 0)))
