@@ -10,7 +10,7 @@ export const profile = {
   links: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/robert-rankin-bb4864420/' },
     // TODO: replace with your GitHub URL or delete this entry
-    { label: 'GitHub', href: 'https://github.com/robrankin313' },
+    //{ label: 'GitHub', href: 'https://github.com/robrankin313' },
   ],
 }
 
